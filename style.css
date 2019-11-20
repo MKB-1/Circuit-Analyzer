@@ -1,0 +1,213 @@
+#container{
+    display: grid;
+    grid-template-columns: 1fr 500px 25px 500px 1fr;
+    grid-template-rows: 1fr 150px 200px 0.25fr;
+}
+
+#circuit-grid{
+    width: 500px;
+    height: 500px;
+    grid-column: 2 / 3;
+    background-color: grey;
+    display: grid;
+    grid-template-columns: repeat(10, 50px);
+    grid-template-rows: repeat(10, 50px);
+    border: 1px solid black; /* easy fix to inner borders being 2px thick due to overlapping, now outer borders are also 2px thick */
+}
+
+.gridbox{
+    border: 1px solid black;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+      /* Prevents text highlighting */
+      -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+      -khtml-user-select: none; /* Konqueror HTML */
+      -moz-user-select: none; /* Firefox */
+      -ms-user-select: none; /* Internet Explorer/Edge */
+          user-select: none; /* Non-prefixed version, currently
+                              supported by Chrome and Opera */
+  
+}
+.LHS-container{
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#circuit-visual{
+    width: 500px;
+    height: 500px;
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(10, 50px);
+    grid-template-columns: repeat(10, 50px);
+}
+
+
+#generate-circuit-btn{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    width: 500px;
+    height: 50px;
+}
+
+#data-request-container{
+    background-color: rgb(207, 218, 228);
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+    border: 2px solid black;
+    border-top: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* CSS IS ANNOYING: 502px because circuit-visual ends up adding 2px worth of borders somehow? */
+    width: 502px;
+    display: grid;
+    grid-template-columns: 430px 74px;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.component{
+    height: 33%;
+    width: 100%;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#resistors{
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+#voltageSrc{  /* redundant in V2 */
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+#voltageSources{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+#currentSrc{ /* redundant in V2 */
+    grid-column: 1 / 2;
+    grid-row: 3 / -1;
+}
+#currentSources{
+    grid-column: 1 / 2;
+    grid-row: 3 / -1;
+}
+
+.component>div{
+    margin-left: 0.2rem;
+}
+
+/* Beautiful CSS */
+.text-input > input[type="text"]{
+    width: 50px;
+    margin-right: 0.2rem;
+    text-align: center;
+}
+
+#solve-btn{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    padding: 0;
+    width: 85%;
+    height: 85%;
+    justify-self: start;
+}
+
+/* DISPLAYING NODES */
+.node-1{
+    background-color: rgba(101, 101, 214, 0.363);
+}
+.node-2{
+    background-color: rgba(150, 211, 138, 0.363);
+}
+.node-3{
+    background-color: rgba(170, 82, 82, 0.363);
+}
+.node-4{
+    background-color: rgba(203, 214, 101, 0.363);
+}
+.node-5{
+    background-color: rgba(101, 214, 214, 0.363);
+}
+.node-6{
+    background-color: rgba(12, 175, 12, 0.363);
+}
+.node-7{
+    background-color: rgba(255, 0, 106, 0.363);
+}
+.node-8{
+    background-color: rgba(47, 88, 37, 0.363);
+}
+.node-9{
+    background-color: rgba(44, 9, 90, 0.363);
+}
+.node-10{
+    background-color: rgba(66, 21, 0, 0.363);
+}
+.faded-wire{
+    opacity: 0.3;
+}
+
+/* DISPLAYING COMPONENT IDS */
+.horizontal-component{
+    z-index: 100;
+    position: absolute;
+    margin-left: 15px;
+    margin-top: -8px;
+    
+}
+.vertical-component{
+    z-index: 100;
+    position: absolute;
+    margin-left: -7px;
+    margin-top: 1px;
+}
+.vgrid-img{
+    position: absolute;
+    z-index: -1;
+}
+
+/* RESULTS */
+#results{
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    width: 100%;
+    height: 100px;
+    display: flex;
+}
+#results>div{
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* INTERESTING CONCEPT: CLASSES AS 'FUNCTIONS' */
+.rotate90{
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+}
+.rotate180{
+transform: rotate(180deg);
+-webkit-transform: rotate(180deg);
+-ms-transform: rotate(180deg);
+}
+.rotate270{
+transform: rotate(270deg);
+-webkit-transform: rotate(270deg);
+-ms-transform: rotate(270deg);
+}
