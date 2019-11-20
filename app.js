@@ -424,31 +424,31 @@ class UI{
         switch(type){
             case 'STRAIGHT_WIRE':
                 image = document.createElement('img');
-                image.src = '/IMG/straight-wire.png';
+                image.src = '/Circuit-Analyzer/IMG/straight-wire.png';
                 break;
             case 'CORNER_WIRE':
                 image = document.createElement('img');
-                image.src = '/IMG/corner-wire.png';
+                image.src = '/Circuit-Analyzer/IMG/corner-wire.png';
                 break;
             case 'T_WIRE':
                 image = document.createElement('img');
-                image.src = '/IMG/T-wire.png';
+                image.src = '/Circuit-Analyzer/IMG/T-wire.png';
                 break;
             case 'CROSS_WIRE':
                 image = document.createElement('img');
-                image.src = '/IMG/cross-wire.png';
+                image.src = '/Circuit-Analyzer/IMG/cross-wire.png';
                 break;
             case 'RESISTOR':
                 image = document.createElement('img');
-                image.src = '/IMG/resistor.png';
+                image.src = '/Circuit-Analyzer/IMG/resistor.png';
                 break;
             case 'VOLTAGE_SRC':
                 image = document.createElement('img');
-                image.src = '/IMG/voltage-source.png';
+                image.src = '/Circuit-Analyzer/IMG/voltage-source.png';
                 break;
             case 'CURRENT_SRC':
                 image = document.createElement('img');
-                image.src = '/IMG/current-source.png';
+                image.src = '/Circuit-Analyzer/IMG/current-source.png';
                 break;
             default:
                 break;
