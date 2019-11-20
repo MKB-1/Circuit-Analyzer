@@ -1,4 +1,3 @@
-//To-do: Find a way to replace looping through componentTypes & skipping wire/ground as a function?
 class UI{
     constructor(){
         //replace dataArr & connectionsArr by an object board with properties board[i]data & board[i]connections, where 0 < i < 100
