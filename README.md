@@ -15,6 +15,23 @@ This was my first project ever made. I wrote this while I was still in Biochemis
 It was a difficult project and took me a lot of time to figure out how exactly it was all going to work. In the end, it was a fun experience!
 
 
+## How To Use
+
+Draw a circuit by clicking on the tiles.
+R -> Resistor
+I -> Current Source
+V -> Voltage Source
+G -> Ground (Only 1 ground must exist and it must be adjacent to a voltage source)
+. -> Wire (used to connect other components)
+
+The direction of the voltage and current source cannot be changed, but they can have negative values (which is essentially the same as reversing their direction).
+All components can only have 2 connections on opposite sides (i.e. North/South or East/West; North/East, North/West, South/East, South/West is invalid).
+Only Wires may have more than 2 connections. Wires have no restrictions on the relative positions of the connections either.
+
+### Example of a valid circuit
+![DC CIRCUIT EXAMPLE](https://user-images.githubusercontent.com/45188433/215273141-776b5993-eb97-4b26-b804-16ae68fd3fe7.PNG)
+
+
 ### Built With
 
 * JavaScript
