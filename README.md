@@ -18,11 +18,11 @@ It was a difficult project and took me a lot of time to figure out how exactly i
 ## How To Use
 
 Draw a circuit by clicking on the tiles.
-R -> Resistor
-I -> Current Source
-V -> Voltage Source
-G -> Ground (Exactly 1 ground must exist. The node which contains G is a reference node and will have a node voltage of 0.)
-. -> Wire (used to connect other components)
+R -> Resistor <br>
+I -> Current Source <br>
+V -> Voltage Source <br>
+G -> Ground (Exactly 1 ground must exist. The node which contains G is a reference node and will have a node voltage of 0.) <br>
+. -> Wire (used to connect other components) <br>
 
 The direction of the voltage and current source cannot be changed, but they can have negative values (which is essentially the same as reversing their direction).
 All components can only have 2 connections on opposite sides (i.e. North/South or East/West; North/East, North/West, South/East, South/West is invalid).
