@@ -25,7 +25,7 @@ G -> Ground (Exactly 1 ground must exist. The node which contains G is a referen
 . -> Wire (used to connect other components) <br>
 
 The direction of the voltage and current source cannot be changed, but they can have negative values (which is essentially the same as reversing their direction).
-All components can only have 2 connections on opposite sides (i.e. North/South or East/West; North/East, North/West, South/East, South/West is invalid).
+All components must have exactly 2 connections on opposite sides (i.e. North/South or East/West; North/East, North/West, South/East, South/West is invalid).
 Only Wires may have more than 2 connections. Wires have no restrictions on the relative positions of the connections either.
 
 ### Example of a valid circuit
